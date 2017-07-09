@@ -1,0 +1,3 @@
+mydomain = falco.bz
+mynetworks_style = host
+mailbox_command = procmail
