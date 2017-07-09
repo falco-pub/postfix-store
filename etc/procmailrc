@@ -2,10 +2,10 @@ MAILDIR=/var/spool/mail
 SHELL=/bin/sh
 PATH=/bin:/usr/bin:/usr/local/bin
 MONTHFOLDER=`date +%Y-%m`
-LOGFILE=$MAILDIR/.logs/procmail-$MONTHFOLDER.log
+LOGFILE=$MAILDIR/.logs/$LOGNAME-$MONTHFOLDER.log
 VERBOSE=on
 
 
 :0:
-$MAILDIR/inbox/
+$MAILDIR/$LOGNAME/inbox/
 
