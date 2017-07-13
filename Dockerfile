@@ -16,6 +16,9 @@ COPY /etc/procmailrc /etc
 RUN chmod 6751 /usr/bin/procmail
 RUN mkdir /var/spool/mail
 
+RUN addgroup -g 500 user \
+    && adduser -D -h /home/user -G user -u 500 user
+
 EXPOSE 25
 
 VOLUME /var/log
