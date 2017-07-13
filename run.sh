@@ -10,6 +10,6 @@ chmod 1777 /var/spool/mail/.logs
 mkdir /var/spool/mail/nobody
 chown nobody: /var/spool/mail/nobody
 mkdir /var/spool/mail/user
-chown nobody: /var/spool/mail/user
+chown user: /var/spool/mail/user
 
 /usr/bin/supervisord
