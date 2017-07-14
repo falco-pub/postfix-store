@@ -3,6 +3,6 @@ alias_maps =
 virtual_alias_domains =
   falco.bz
   falco.in
-virtual_alias_maps = hash:/etc/postfix/virtual
+virtual_alias_maps = hash:/etc/postfix/virtual hash:/etc/postfix/user/virtual
 mynetworks_style = host
 mailbox_command = procmail -p -m /etc/procmailrc

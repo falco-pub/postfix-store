@@ -4,6 +4,8 @@ touch /var/log/maillog
 touch /var/log/messages
 chmod o+r /var/log/*
 
+postmap /etc/postfix/user/virtual
+
 chmod 1777 /var/spool/mail 
 mkdir /var/spool/mail/.logs     
 chmod 1777 /var/spool/mail/.logs
