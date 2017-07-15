@@ -5,4 +5,4 @@ virtual_alias_domains =
   /etc/postfix/user/virtual_domains
 virtual_alias_maps = hash:/etc/postfix/virtual hash:/etc/postfix/user/virtual
 mynetworks_style = host
-mailbox_command = procmail -p -m /etc/posfix/user/procmailrc.$LOGNAME
+mailbox_command = procmail -p -m /etc/postfix/user/procmailrc.$LOGNAME
