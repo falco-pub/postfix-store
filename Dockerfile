@@ -12,7 +12,7 @@ RUN newaliases
 COPY run.sh .
 RUN chmod +x run.sh
 
-COPY /etc/bogofilter /etc
+COPY /etc/bogofilter.cf /etc
 
 COPY /etc/procmailrc /etc
 RUN chmod 6751 /usr/bin/procmail
