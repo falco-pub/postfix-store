@@ -1,0 +1,10 @@
+bogofilter_dir=/mnt/bogofilter
+wordlist r,wordlist,wordlist.db,1
+spam_header_name=X-Bogosity
+spamicity_tags = Yes, No, Unsure
+spamicity_formats = %0.6f, %0.6f, %0.6f
+header_format = %h: %c, tests=bogofilter, spamicity=%p, queueID=%Q, msgID=%I
+block_on_subnets=yes
+ham_cutoff = 0.10
+spam_cutoff = 0.90
+

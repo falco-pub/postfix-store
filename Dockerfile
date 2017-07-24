@@ -1,7 +1,7 @@
 FROM alpine:3.6
 RUN apk update
 RUN apk add --no-cache --update postfix ca-certificates supervisor rsyslog bash
-RUN apk add --no-cache --update procmail
+RUN apk add --no-cache --update procmail bogofilter
 
 COPY /etc/supervisord.conf /etc/
 
@@ -11,6 +11,8 @@ RUN newaliases
 
 COPY run.sh .
 RUN chmod +x run.sh
+
+COPY /etc/bogofilter /etc
 
 COPY /etc/procmailrc /etc
 RUN chmod 6751 /usr/bin/procmail
